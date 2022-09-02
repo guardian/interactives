@@ -1,0 +1,24 @@
+{
+  "name": "@guardian/interactives",
+  "version": "0.0.1-alpha.0",
+  "description": "A WIP repository designed to hold interactive designs which can be rendered by our platforms, DCR & AR.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guardian/interactives.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guardian/interactives/issues"
+  },
+  "homepage": "https://github.com/guardian/interactives#readme",
+  "devDependencies": {
+    "@guardian/eslint-config-typescript": "^1.0.8",
+    "@guardian/tsconfig": "^0.1.4",
+    "typescript": "^4.8.2"
+  }
+}
