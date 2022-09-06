@@ -1,5 +1,6 @@
 // TODO setup svelte: https://github.com/sveltejs/rollup-plugin-svelte
 import { nodeResolve } from '@rollup/plugin-node-resolve';
+import svelte from 'rollup-plugin-svelte';
 import typescript from '@rollup/plugin-typescript';
 
 export default {
@@ -8,5 +9,13 @@ export default {
         file: 'dist/bundle.js',
         format: 'cjs'
     },
-    plugins: [typescript(), nodeResolve()],
+    plugins: [
+        svelte({
+            compilerOptions: {
+                generate: 'ssr',
+                hydratable: true,
+            }
+        }),
+        typescript(),
+        nodeResolve()],
 }

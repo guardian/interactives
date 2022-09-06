@@ -1,3 +1,9 @@
+import App from './App.svelte'
+
 export const renderToString = ({ webTitle }: { webTitle: string }) => {
-    return `<h1>${webTitle} hello</h1>`
+    const { head, html, css } = App.render({
+        webTitle
+    });
+    console.log(head, html, css)
+    return html
 }
